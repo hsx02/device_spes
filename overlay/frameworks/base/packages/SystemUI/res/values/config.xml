@@ -92,4 +92,7 @@
      sensor will be delayed when the device first enters dozing but the device has not entered its
      low powered state yet. -->
     <bool name="doze_long_press_uses_prox">false</bool>
+
+    <!-- Doze: check proximity sensor before pulsing? -->
+    <bool name="doze_proximity_check_before_pulse">false</bool>
 </resources>
