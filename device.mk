@@ -299,6 +299,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
 
+# Keyguard
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.wm.enable_remote_keyguard_animation=0
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.spes
