@@ -7,4 +7,16 @@ allow system_app sysfs_zram:file r_file_perms;
 allow system_app sysfs_msm_subsys:dir search;
 allow system_app proc_tp_gesture:file rw_file_perms;
 
-get_prop(system_app, vendor_persist_camera_prop)
+allow system_app kcal_dev:dir search;
+allow system_app kcal_dev:file rw_file_perms;
+allow system_app sysfs_graphics:dir search;
+allow system_app sysfs_graphics:file rw_file_perms;
+allow system_app sysfs_leds:dir search;
+allow system_app sysfs_fpsinfo:file rw_file_perms;
+allow system_app sysfs_headphonegain:file rw_file_perms;
+allow system_app sysfs_micgain:file rw_file_perms;
+allow system_app sysfs_earpiecegain:file rw_file_perms;
+allow system_app sysfs_thermal:file rw_file_perms;
+
+get_prop(system_app, system_prop);
+set_prop(system_app, system_prop);

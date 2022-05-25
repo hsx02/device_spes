@@ -92,6 +92,14 @@ ro.crypto.volume.metadata.method=dm-default-key
 # Dalvik
 dalvik.vm.dex2oat64.enabled=true
 
+# Dirac
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.audio.soundfx.dirac=true \
+    persist.audio.dirac.speaker=true \
+    persist.dirac.acs.controller=qem \
+    persist.dirac.acs.ignore_error=1 \
+    persist.dirac.acs.storeSettings=1
+
 # Display calib
 ro.vendor.display.sensortype=2
 ro.vendor.display.svi=1
