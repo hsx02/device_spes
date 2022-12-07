@@ -109,10 +109,6 @@
 /sys/devices/platform/soc/4a84000.i2c/i2c-0/0-0066/power_supply/sc8551-standalone/charging_enabled                                              u:object_r:vendor_sysfs_battery_supply:s0
 /sys/devices/platform/soc/4a84000.i2c/i2c-0/0-0071/power_supply/bms(/.*)?                                                                       u:object_r:vendor_sysfs_battery_supply:s0
 
-# Kcal
-/sys/devices/platform/kcal_ctrl.0(/.*)?                                                                                     u:object_r:kcal_dev:s0
-/sys/bus/platform/drivers/kcal_ctrl(/.*)?                                                                                   u:object_r:kcal_dev:s0
-
 # IR
 /dev/ir_spi                                                             u:object_r:lirc_device:s0
 /dev/lirc[0-9]                                                          u:object_r:lirc_device:s0
