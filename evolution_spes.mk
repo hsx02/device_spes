@@ -12,16 +12,25 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/spes/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Additions
 $(call inherit-product-if-exists, vendor/gapps/basic/config.mk)
+
+# GAPPS main flag
+WITH_GAPPS := true
+TARGET_CORE_GAPPS := true
+
+# Alpha internal properties
+TARGET_ENABLE_BLUR := true
+TARGET_EXCLUDES_AUDIOFX := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Camera
 $(call inherit-product-if-exists, vendor/miuicamera/config.mk)
 
 # Product Specifics
-PRODUCT_NAME := lineage_spes
+PRODUCT_NAME := evolution_spes
 PRODUCT_DEVICE := spes
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 11
