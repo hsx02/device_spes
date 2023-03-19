@@ -189,7 +189,7 @@ persist.sys.oem.otg_support=true
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
-# Radio
+# Radio/RIL
 persist.radio.multisim.config=dsds
 persist.vendor.data.iwlan.enable=true
 persist.vendor.radio.add_power_save=1
@@ -213,6 +213,7 @@ vendor.rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 ro.com.android.dataroaming=false
 ro.telephony.default_network=22,22
 ro.vendor.se.type=HCE,UICC
+rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 telephony.lteOnCdmaDevice=1
 
 # QSPM
