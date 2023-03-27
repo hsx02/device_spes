@@ -521,3 +521,14 @@ ifdef CR_VERSION
 PRODUCT_BOOT_JARS += \
     WfdCommon
 endif
+
+# Configstore
+PRODUCT_PACKAGES += \
+    disable_configstore
+
+# Device-specific settings
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/privapp-permissions-parts.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-parts.xml
