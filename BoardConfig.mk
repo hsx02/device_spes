@@ -18,9 +18,8 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_spes
 TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_spes
 
 # Kernel
-BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
-TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
+BOARD_MKBOOTIMG_ARGS += --dtb $(DEVICE_PATH)-kernel/dtb.img
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)-kernel/dtbo.img
 
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := spes,spesn
