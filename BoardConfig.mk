@@ -6,6 +6,9 @@
 
 DEVICE_PATH := device/xiaomi/spes
 
+# Board
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
+
 # Display
 TARGET_SCREEN_DENSITY := 440
 
