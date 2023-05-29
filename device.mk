@@ -3,10 +3,6 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-# MiuiCamera
-
-$(call inherit-product-if-exists, vendor/xiaomi/spes-miuicamera/products/miuicamera.mk)
-
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
@@ -355,6 +351,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.mlipay@1.1.vendor \
     vendor.xiaomi.hardware.mtdservice@1.2.vendor
+
+#MiuiCamera
+$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/MiuiCamera.mk)
 
 # Network
 PRODUCT_PACKAGES += \
