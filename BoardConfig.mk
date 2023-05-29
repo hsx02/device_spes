@@ -6,9 +6,6 @@
 
 DEVICE_PATH := device/xiaomi/spes
 
-# MIUI camera stuff
--include vendor/xiaomi/spes-miuicamera/products/board.mk
-
 # A/B
 AB_OTA_UPDATER := true
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
