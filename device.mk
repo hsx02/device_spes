@@ -351,8 +351,8 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.mlipay@1.1.vendor \
     vendor.xiaomi.hardware.mtdservice@1.2.vendor
 
-#MiuiCamera
-$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/MiuiCamera.mk)
+# MiuiCamera
+$(call inherit-product-if-exists, vendor/xiaomi/spes-miuicamera/products/miuicamera.mk)
 
 # Network
 PRODUCT_PACKAGES += \
