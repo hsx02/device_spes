@@ -105,9 +105,6 @@ BOARD_HAVE_QCOM_FM := true
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
-# MIUI camera stuff
--include vendor/xiaomi/spes-miuicamera/products/board.mk
-
 # HALs
 QCOM_SOONG_NAMESPACE := $(DEVICE_PATH)/hals
 DEVICE_SPECIFIC_AUDIO_PATH := $(DEVICE_PATH)/hals/audio
