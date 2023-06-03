@@ -29,6 +29,7 @@ ro.vendor.audio.surround.support=false
 ro.vendor.audio.us.proximity=true
 ro.vendor.audio.vocal.support=false
 ro.vendor.audio.voice.change.support=true
+ro.vendor.audio.voice.change.version=2
 
 # Bluetooth
 bluetooth.hardware.power.idle_cur_ma=7
